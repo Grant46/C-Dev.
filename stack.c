@@ -14,7 +14,7 @@ int stack[N];
 void push();
 void pop();
 
-//input
+//input number
 void push(){
     if(top == N-1)
         printf("Overflow !");
@@ -26,14 +26,14 @@ void push(){
     }
 }
 
-//output
+//output number
 void pop(){
     if(top == -1)
         printf("Underflow !");
 
     else{
         int x = stack[top];
-        printf("\n %d", x);
+        printf("\n %d", x); //number output
         top-=1;
     }
     
